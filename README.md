@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# React Typescript Tailwind Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A minimal starter template to quickly setup your project with Vite, React, and Tailwind CSS in Typescript + SWC.
 
-Currently, two official plugins are available:
+## 🚀 Getting Started 
+You can either
+### 1. Use this repository as template
+By clicking the green "Use this template" button at the upper right in this page, or by simply clicking this [link](https://github.com/new?template_name=react-ts-tailwind-starter&template_owner=ifalfahri)
+### 2. Deploy to Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fifalfahri%2Freact-ts-tailwind-starter)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 3. Manual
+``` 
+git clone https://github.com/ifalfahri/react-tailwind-starter.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+and then you can
 ```
+npm install
+```
+```
+npm run dev
+```
+
+## 💡 Features
+- Vite for fast bundling and development.
+- React for building interactive UIs.
+- Typescript for type safety and better developer experience.
+- Tailwind CSS for utility-first styling.
+- SWC for faster JavaScript compilation.
